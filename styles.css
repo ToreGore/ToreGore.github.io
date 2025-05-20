@@ -1,0 +1,63 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f8f8f4;
+}
+
+/* Hero section background */
+.hero-section {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 60vh;
+    border-radius: 1.5rem;
+    overflow: hidden;
+}
+
+/* Moving banner container */
+.moving-banner-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(5px);
+    border-bottom-left-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+    padding: 1rem 0;
+    white-space: nowrap;
+}
+
+/* Moving banner text */
+.moving-banner-text {
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    padding-left: 100%;
+    animation: marquee 20s linear infinite;
+}
+
+/* Marquee animation */
+@keyframes marquee {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-100%); }
+}
+
+/* Logo placeholder */
+.logo-placeholder {
+    position: absolute;
+    top: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 40px;
+    background-color: #555;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 0.8rem;
+}
